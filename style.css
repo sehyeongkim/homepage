@@ -1,0 +1,185 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Song+Myung&display=swap');
+
+* {
+	font-family: 'Song Myung' , sans-serif;
+}
+
+@media all and (min-width:1025px) {
+	body {
+		padding-top:50px;
+	}
+
+	footer {
+		font-size: 18px;
+	}
+
+	.navleft {
+		margin:2px;
+		padding:2px;
+	}
+
+	#navbar {
+		height:40px;
+		font-size: 25px;
+	}
+
+	.description {
+		font-size: 30px;
+	}
+
+	.mbti {
+		width:500px;
+		height:550px;
+	}
+}
+
+@media all and (min-width:768px) and (max-width:1024px){
+	body {
+		padding-top:35px;
+	}
+
+	footer {
+		font-size: 11px;
+	}
+
+	.navleft {
+		margin:1px;
+		padding:1px;
+	}
+
+	#navbar {
+		height:35px;
+		font-size: 20px;
+	}
+
+	.description {
+		font-size: 20px;
+	}
+
+	.mbti {
+		width:400px;
+		height:450px;
+	}
+}
+
+@media all and (max-width:767px) {
+	body {
+		padding-top:23px;
+	}
+
+	footer {
+		font-size: 10px;
+	}
+
+	.navleft {
+		margin:0;
+		padding:0;
+	}
+
+	#navbar {
+		height:23px;
+		font-size: 15px;
+	}
+
+	.description {
+		font-size: 15px;
+	}
+
+	.mbti {
+		width:350px;
+		height:400px;
+	}
+}
+
+h1 {
+	text-align:center;
+}
+
+body {
+	text-align:center;
+	background-color: white;
+}
+
+footer {
+	text-align:center;
+	color:black;
+	background-color:#F3F1EF; 
+	max-width: 100%;
+	height:auto;
+}
+
+footer a {
+	padding:4px;
+}
+
+img {
+	max-width: 100%;
+	height:auto;
+}
+
+a {
+	text-decoration: none;
+	color:black;
+}
+
+ul {
+	list-style-type:none;
+}
+
+li {
+	padding:3px;
+}
+
+.navright {
+	margin:0;
+}
+
+.navleft li {
+	float:left;
+}
+
+.navright li {
+	float:right;
+}
+
+#navbar {
+	top:0;
+	left:0;
+	width:100%;
+	background-color: white;
+	color: black;
+	position:fixed;
+	z-index: 100;
+	box-shadow: 0 4px 2px -2px gray; 
+}
+
+.textbox img {
+	border: 1.5px black solid;
+}
+
+.textbox {
+	position:relative;
+	transition: .5s ease;
+	display:inline-block;
+}
+
+.description {
+	bottom:40%;
+	right:40%;
+	color:#3D3C3B;
+	background-color:#DFDDD9; 
+	visibility: hidden;
+	position:absolute;
+}
+
+
+.textbox:hover {
+	opacity:0.7;
+}
+
+
+.textbox:hover .description {
+	visibility: visible;
+}
+
